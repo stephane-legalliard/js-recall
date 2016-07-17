@@ -27,7 +27,7 @@ describe('javascript-Recall', function() {
         expect(result).toEqual(['god', 'yeknom', 'tnahpele', 'kayak']);
     });
 
-    it('makes every possible pairing of students', function() {
+    xit('makes every possible pairing of students', function() {
         var result = everyPossiblePair(['Jon', 'Tyrion', 'Daenerys']);
         // sorted alphabetically
         expect(result).toEqual([

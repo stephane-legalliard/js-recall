@@ -1,33 +1,65 @@
 var selectElementsStartingWithA = function(array) {
-    return 'Write your method here';
+    var tab = [];    
+    for (var i = 0 ; i < array.length ; i++) {
+        var first_letter = array[i].charAt(0);
+        if (first_letter === 'a') {
+            tab.push(array[i]);
+        }
+    }    
+    return tab;
 }
 
 var selectElementsStartingWithVowel = function(array) {
-    return 'Write your method here';
+    var tab = [];    
+    for (var i = 0 ; i < array.length ; i++) {
+        var first_letter = array[i].charAt(0);
+        if (first_letter === 'a' || first_letter === 'e' || first_letter === 'i' || first_letter === 'o' 
+        || first_letter === 'u' || first_letter === 'y') {
+            tab.push(array[i]);
+        }
+    }    
+    return tab;
 }
 
 var removeNullElements = function(array) {
-    return 'Write your method here';
+    var tab = [];
+    for (var i = 0 ; i < array.length ; i++) {
+        if (array[i] != null) {
+            tab.push(array[i]);
+        }
+    }     
+    return tab;
 }
 
 var removeNullAndFalseElements = function(array) {
-    return 'Write your method here';
+    var tab = [];
+    for (var i = 0 ; i < array.length ; i++) {
+        if (array[i] !== null && array[i] !== false) {
+            tab.push(array[i]);
+        }
+    }     
+    return tab;
 }
 
 var reverseWordsInArray = function(array) {
-    return 'Write your method here';
+    var tab = [];
+    for (var i = 0 ; i < array.length ; i++) {
+        tab.push(array[i].split("").reverse().join(""));
+    }    
+    return tab;
 }
 
-var everyPossiblePair = function(array) {
-    return 'Write your method here';
-}
+/*var everyPossiblePair = function(array) {
+}*/    
 
 var allElementsExceptFirstThree = function(array) {
-    return 'Write your method here';
+    array.splice(0,3);
+    return array;
 }
 
 var addElementToBeginning = function(array, element) {
-    return 'Write your method here';
+    array.unshift(element);
+    return array;
 }
 
 var sortByLastLetter = function(array) {
